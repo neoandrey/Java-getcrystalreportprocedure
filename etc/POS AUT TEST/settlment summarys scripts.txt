@@ -1,0 +1,17 @@
+select 
+acquirer,
+sum(Merchant_Receivable) as merchant_receivable,
+sum(Acquirer_Fee_Payable) as acquirer_fee_payable,
+sum(Issuer_Fee_Payable) as issuer_fee_payable,
+sum(Issuer_Fee) as issuer_fee,
+sum(Acquirer_Fee) as acquirer_fee
+from aut_test
+group by 
+acquirer
+
+select 
+acquirer,
+(sum(Merchant_Receivable)+ sum(Acquirer_Fee_Payable) + sum(Issuer_Fee_Payable) + Sum(Issuer_Fee) + sum(Acquirer_Fee)) as TOTAL
+from aut_test
+group by 
+acquirer

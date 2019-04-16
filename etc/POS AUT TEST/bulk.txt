@@ -1,0 +1,29 @@
+8.0
+25
+1  SQLCHAR 0 42 "," 1 datetime_req SQL_Latin1_General_Cp437_BIN
+2  SQLCHAR 0 10 "\"\"," 2 system_trace_audit_nr SQL_Latin1_General_Cp437_BIN
+3  SQLCHAR 0 50 "\"\"," 3 industry_segment SQL_Latin1_General_Cp437_BIN
+4  SQLCHAR 0 50 "\"\"," 4 discount_identity SQL_Latin1_General_Cp437_BIN
+5  SQLCHAR 0 30 "\"\"," 5 rsp_code SQL_Latin1_General_Cp437_BIN
+6  SQLCHAR 0 20 "\"\"," 6 pan SQL_Latin1_General_Cp437_BIN
+7  SQLCHAR 0 10 "\"\"," 7 terminal_id SQL_Latin1_General_Cp437_BIN
+8  SQLCHAR 0 42 "," 8 settle_amount_rsp SQL_Latin1_General_Cp437_BIN
+9  SQLCHAR 0 42 "," 9 settle_amount_impact SQL_Latin1_General_Cp437_BIN
+10 SQLCHAR 0 42 "," 10 net_surcharge SQL_Latin1_General_Cp437_BIN
+11 SQLCHAR 0 42 "," 11 merchant_receivable SQL_Latin1_General_Cp437_BIN
+12 SQLCHAR 0 60 "\"\"," 12 tran_type_description SQL_Latin1_General_Cp437_BIN
+13 SQLCHAR 0 42 "," 13 acquirer_fee_payable SQL_Latin1_General_Cp437_BIN
+14 SQLCHAR 0 42 "," 14 issuer_fee_payable SQL_Latin1_General_Cp437_BIN
+15 SQLCHAR 0 42 "," 15 issuer_fee SQL_Latin1_General_Cp437_BIN
+16 SQLCHAR 0 42 "," 16 acquirer_fee SQL_Latin1_General_Cp437_BIN
+17 SQLCHAR 0 42 "," 17 switch_fee SQL_Latin1_General_Cp437_BIN
+18 SQLCHAR 0 42 "," 18 iso_fee SQL_Latin1_General_Cp437_BIN
+19 SQLCHAR 0 42 "," 19 easyfuel_fee SQL_Latin1_General_Cp437_BIN
+20 SQLCHAR 0 42 "," 20 ypm_fee SQL_Latin1_General_Cp437_BIN
+21 SQLCHAR 0 42 "," 21 pool SQL_Latin1_General_Cp437_BIN
+22 SQLCHAR 0 42 "," 22 reward_money_income_amount SQL_Latin1_General_Cp437_BIN
+23 SQLCHAR 0 42 "," 23 PTSA_fee SQL_Latin1_General_Cp437_BIN
+24 SQLCHAR 0 42 "," 24 reward_money_pool SQL_Latin1_General_Cp437_BIN
+25 SQLCHAR 0 42 "," 25 Fee_Pool SQL_Latin1_General_Cp437_BIN
+26 SQLCHAR 0 20 "\"\"," 26 acquirer SQL_Latin1_General_Cp437_BIN
+27 SQLCHAR 0 30 "\n" 27 issuer SQL_Latin1_General_Cp437_BIN

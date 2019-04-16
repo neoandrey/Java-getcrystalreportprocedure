@@ -1,0 +1,3 @@
+javac -cp bin;com.azalea.ufl.barcode.1.0.jar;lib\commons-collections-3.1.jar;lib\commons-configuration-1.2.jar;lib\commons-lang-2.1.jar;lib\commons-logging.jar;lib\CrystalCommon2.jar;lib\CrystalReportsRuntime.jar;lib\cvom.jar;lib\DatabaseConnectors.jar;lib\icu4j.jar;lib\jai_imageio.jar;lib\JDBInterface.jar;lib\jrcerom.jar;lib\keycodeDecoder.jar;lib\log4j.jar;lib\logging.jar;lib\pfjgraphics.jar;lib\QueryBuilder.jar;lib\webreporting-jsf.jar;lib\webreporting.jar;lib\XMLConnector.jar;lib\xpp3.jar -d bin src/WriteCrystalConnectionInfo.java
+
+pause;

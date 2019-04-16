@@ -1,0 +1,39 @@
+sp_help aut_test
+
+select 
+acquirer,industry_segment,
+sum(Merchant_Receivable) as merchant_receivable,
+sum(Acquirer_Fee_Payable) as acquirer_fee_payable,
+sum(Issuer_Fee_Payable) as issuer_fee_payable,
+sum(Issuer_Fee) as issuer_fee,
+sum(Acquirer_Fee) as acquirer_fee
+from aut_test
+group by 
+acquirer,industry_segment
+order by acquirer
+
+select 
+acquirer,industry_segment,
+(sum(Merchant_Receivable)+ sum(Acquirer_Fee_Payable) + sum(Issuer_Fee_Payable) + Sum(Issuer_Fee) + sum(Acquirer_Fee)) as TOTAL
+from aut_test
+group by 
+acquirer,industry_segment
+order by acquirer
+
+
+
+select 
+at1.acquirer,at1.industry_segment,
+sum(at1.Merchant_Receivable) as merchant_receivable,
+sum(at1.Acquirer_Fee_Payable) as acquirer_fee_payable,
+issuer_fee_payable = (SELECT SUM(at2.issuer_fee_payable)
+		      FROM aut_test at2
+	              WHERE at2.Issuer = at1.Acquirer),
+sum(at1.Issuer_Fee) as issuer_fee,
+sum(at1.Acquirer_Fee) as acquirer_fee
+from aut_test at1
+group by 
+at1.acquirer,at1.industry_segment
+order by at1.acquirer
+
+--select * from aut_test
